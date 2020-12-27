@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POST MESSAGE</title>
+    <style>
+        input,select{
+            border:1px solid green;
+            border-radius:5px;
+            background-color:rgb(232, 250, 250);
+            color:brown;
+            width:240px;
+        }
+        .gender{
+            width:auto;
+            background-color: lightcoral;
+        }
+    </style>
+</head>
+<body>
+    <h1> POST MESSAGE FORM</h1>
+    <hr>
+    <div>
+        <form>
+	<center>
+	<table cellpadding="3" >
+	<tr>
+        <td>    <p>Enter the name:</td> <td><input type="text" placeholder="name please"></td></p></td>
+         <tr> <td>   <p>Enter email address:</td> <td><input type="email" placeholder="email address"></td></p></tr>
+         <tr> <td>  <p>Enter date of Birth:</td> <td><input type="date"/></td></p> </tr>
+          <tr>  <p>
+               <td> Gender: </td>
+	<td>
+                <input class="gender" type="radio" name="gender"/>Male
+                <input class="gender" type="radio" name="gender"/>Female
+                <input class="gender" type="radio" name="gender"/>Other
+                </td>
+            </p>
+	</tr>
+	<tr>
+		 <p> 
+                <datalist id="lstcities">
+                    <option>Chennai</option>
+                    <option>Hyderabad</option>
+                    <option>Mysore</option>
+                </datalist>
+		
+		<td>
+                Select choice of location:
+		</td>
+                <td> <input list="lstcities" placeholder="Select city"/> 
+		</td>
+            </p>
+	</tr>
+	<tr>
+	<td>
+            <p>Rate our website: </td>
+               <td> <input type="range" min="1" max="10" step="1"/> </td>
+            </p>
+	</tr>
+	<tr>
+	<td>
+            <p>Comments:</td> <td><input type="text" placeholder="Comments"></p> </td> </tr>
+          <tr> <td>  <p>Scope of Improvement:</td> <td> <input type="text" placeholder="suggestion please"></p> </td> </tr>
+</table>
+<table style="margin-left:70px;">
+           <tr>  <td> <p>
+              <center>  <input type="search" placeholder="search here"/></center>
+            </p> </td> </tr>
+
+<tr>
+<td>
+           <center> <p><button>Submit</button></p> </td> </tr>
+	</table>
+</center>
+        </form>
+    </div>
+    
+</body>
+</html>
